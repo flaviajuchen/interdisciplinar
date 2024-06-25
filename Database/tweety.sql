@@ -24,7 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `comments`
 --
 
 CREATE TABLE `comments` (
@@ -36,7 +35,6 @@ CREATE TABLE `comments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `comments`
 --
 
 INSERT INTO `comments` (`commentID`, `comment`, `commentOn`, `commentBy`, `commentAt`) VALUES
@@ -45,7 +43,6 @@ INSERT INTO `comments` (`commentID`, `comment`, `commentOn`, `commentBy`, `comme
 -- --------------------------------------------------------
 
 --
--- Table structure for table `follow`
 --
 
 CREATE TABLE `follow` (
@@ -56,7 +53,6 @@ CREATE TABLE `follow` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `follow`
 --
 
 INSERT INTO `follow` (`followID`, `sender`, `receiver`, `followOn`) VALUES
@@ -68,7 +64,6 @@ INSERT INTO `follow` (`followID`, `sender`, `receiver`, `followOn`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `likes`
 --
 
 CREATE TABLE `likes` (
@@ -78,7 +73,6 @@ CREATE TABLE `likes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `likes`
 --
 
 INSERT INTO `likes` (`likeID`, `likeBy`, `likeOn`) VALUES
@@ -87,7 +81,6 @@ INSERT INTO `likes` (`likeID`, `likeBy`, `likeOn`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `messages`
 --
 
 CREATE TABLE `messages` (
@@ -100,7 +93,6 @@ CREATE TABLE `messages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `messages`
 --
 
 INSERT INTO `messages` (`messageID`, `message`, `messageTo`, `messageFrom`, `messageOn`, `status`) VALUES
@@ -190,7 +182,6 @@ INSERT INTO `tweets` (`tweetID`, `status`, `tweetBy`, `retweetID`, `retweetBy`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -209,7 +200,6 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`user_id`, `username`, `email`, `password`, `screenName`, `profileImage`, `profileCover`, `following`, `followers`, `bio`, `country`, `website`) VALUES
@@ -220,7 +210,6 @@ INSERT INTO `users` (`user_id`, `username`, `email`, `password`, `screenName`, `
 (5, 'yashgaur908', 'yash@gmail.com', 'e76eb8a75988cb07c8428733a5dd4684', 'Yash Gaur', 'users/avtar1.jpg', 'users/Dev wallpaper.jpg', 2, 1, 'Software Developer | Website Designer', 'India', 'www.yashgaur.tk');
 
 --
--- Indexes for dumped tables
 --
 
 --
@@ -230,96 +219,80 @@ ALTER TABLE `comments`
   ADD PRIMARY KEY (`commentID`);
 
 --
--- Indexes for table `follow`
 --
 ALTER TABLE `follow`
   ADD PRIMARY KEY (`followID`);
 
 --
--- Indexes for table `likes`
 --
 ALTER TABLE `likes`
   ADD PRIMARY KEY (`likeID`);
 
 --
--- Indexes for table `messages`
 --
 ALTER TABLE `messages`
   ADD PRIMARY KEY (`messageID`);
 
 --
--- Indexes for table `notification`
 --
 ALTER TABLE `notification`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `trends`
 --
 ALTER TABLE `trends`
   ADD PRIMARY KEY (`trendID`),
   ADD UNIQUE KEY `createdOn` (`createdOn`);
 
 --
--- Indexes for table `tweets`
 --
 ALTER TABLE `tweets`
   ADD PRIMARY KEY (`tweetID`);
 
 --
--- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
   MODIFY `commentID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `follow`
 --
 ALTER TABLE `follow`
   MODIFY `followID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `likes`
 --
 ALTER TABLE `likes`
   MODIFY `likeID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `messages`
 --
 ALTER TABLE `messages`
   MODIFY `messageID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
---
--- AUTO_INCREMENT for table `notification`
+--`
 --
 ALTER TABLE `notification`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `trends`
 --
 ALTER TABLE `trends`
   MODIFY `trendID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT for table `tweets`
 --
 ALTER TABLE `tweets`
   MODIFY `tweetID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
