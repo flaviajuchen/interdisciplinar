@@ -36,7 +36,7 @@
 ?>
 <html>
 	<head>
-		<title>Password Settings - Twitter</title>
+		<title>Configurações de Senha - FasipeX</title>
 		<meta charset="UTF-8" />
        
        <link rel="shortcut icon" type="image/x-icon" href="<?php echo BASE_URL; ?>assets/images/bird.svg">
@@ -45,11 +45,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         
-		<link rel='stylesheet' href='<?php echo BASE_URL; ?>assets/css/font-awesome.css' />
-    <link rel='stylesheet' href='<?php echo BASE_URL; ?>assets/css/bootstrap.css' />
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style-complete.css" />
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.css" />
-    <script src="<?php echo BASE_URL; ?>assets/js/jquery-3.1.1.min.js"></script>
+		<link rel='stylesheet' href='<?php echo BASE_URL; ?>assets/css/font-awesome.css'/>
+		<link rel='stylesheet' href='<?php echo BASE_URL; ?>assets/css/bootstrap.css' />
+		<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style-complete.css"/>
+		<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.css" />
+		<script src="<?php echo BASE_URL; ?>assets/js/jquery-3.1.1.min.js"></script>
 	</head>
 <body>
 <div class="grid-container">
@@ -57,27 +57,27 @@
     <?php require '../../left-sidebar.php' ?>
     
 	<div class="main">
-        <p class="page_title mb-0"style="border-bottom:none;"><i class="fa fa-cog mr-4" style="color:#50b7f5;"></i>Settings</p>
+        <p class="page_title mb-0"style="border-bottom:none;"><i class="fa fa-cog mr-4" style="color:#50b7f5;"></i>Configurações</p>
         
         <div class="setting-head">
            <div class="account-text">
-            <a href="<?php echo BASE_URL?>settings/account">Account</a>
+            <a href="<?php echo BASE_URL?>settings/account">Conta</a>
             </div>
             <div class="password-text active">
-            <a class="bold" href="<?php echo BASE_URL;?>settings/password">Password</a>
-                </div>
+            <a class="bold" href="<?php echo BASE_URL;?>settings/password">Senha</a>
+            </div>
         </div>
 		
 		<div class="righter mt-4">
 			<div class="inner-righter">
 				<div class="acc">
 					<div class="acc-heading">
-						<h5>Change your password or recover your current one</h5>
+						<h5>Altere sua senha ou recupere a atual</h5>
 					</div>
 					<div class="acc-content">
 					<form method="POST">
 						<div class="acc-wrap">
-							<label class="ml-3" for="">Current Password</label>
+							<label class="ml-3" for="">Senha atual</label>
 							<div class="form-group col-auto">
 								<input class="form-control" type="password" name="currentPwd"/>
 								<span>
@@ -87,7 +87,7 @@
 						</div>
 
 						<div class="acc-wrap">
-							<label class="ml-3" for="">New Password</label>
+							<label class="ml-3" for="">Nova senha</label>
 							<div class="form-group col-auto">
 								<input class="form-control" type="password" name="newPassword"/>
 								<span>
@@ -97,7 +97,7 @@
 						</div>
 						
 						<div class="acc-wrap">
-							<label class="ml-3" for="">Verify Password</label>
+							<label class="ml-3" for="">Verifique a senha</label>
 							<div class="form-group col-auto">
 								<input class="form-control" type="password" name="rePassword"/>
 								<span>
@@ -108,7 +108,7 @@
 						
 						<div class="acc-wrap">
 							<div class="acc-right mt-3">
-                                <button class="new-btn"type="Submit" name="submit" value="Save changes"style="outline:none;">Save</button>
+                                <button class="new-btn"type="Submit" name="submit" value="Save changes"style="outline:none;">Salvar</button>
 							</div>
 							<div class="settings-error">
 								<?php if(isset($error['fields'])){echo $error['fields'];}?>

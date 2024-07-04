@@ -2,7 +2,7 @@
 
 :root {
     /*    --twitter-color: #50b7f5;*/
-    --twitter-color: rgb(29, 161, 242);
+    --twitter-color: #029046;
     --twitter-background: #e6ecf0;
     /*    --twitter-background: rgba(230, 236, 240, 0.9);*/
 }
@@ -271,7 +271,7 @@ textarea {
 }
 
 .button_tweet:hover {
-    background: #4cade9;
+    background: #029046;
 }
 
 .tweet_icons-add i {
@@ -343,7 +343,7 @@ textarea {
 }
 
 .sidebar ul li .button:hover {
-    background: #4cade9;
+    background: #029046;
 }
 
 /*
@@ -486,7 +486,7 @@ textarea {
 }
 
 .main-box .left {
-    background: url(../images/bird.svg) #1da1f2 no-repeat;
+    background: url(../images/bird.svg) #ffffff no-repeat;
     background-size: cover;
     display: flex;
 }
@@ -595,8 +595,8 @@ textarea {
 .main-box .middle .btn-sign-up {
     display: block;
     margin-bottom: 15px;
-    background-color: #1da1f2;
-    border: 1px solid #1da1f2;
+    background-color: #029046;
+    border: 1px solid #029046;
     color: #fff;
     border-radius: 100px;
     padding: 6px 16px;
@@ -611,7 +611,7 @@ textarea {
 }
 
 .main-box .middle .icon.icon--bird {
-    color: #1da1f2;
+    color: #029046;
     font-size: 45px;
     margin-bottom: 8px;
 }
@@ -637,8 +637,8 @@ input[type="text"] {
 
 .btn-login {
     background-color: #fff;
-    border: 1px solid #1da1f2;
-    color: #1da1f2;
+    border: 1px solid #029046;
+    color: #029046;
     border-radius: 100px;
     padding: 12px;
     font-size: 14px;
@@ -652,7 +652,7 @@ input[type="text"] {
 
 .btn-login:hover {
     background-color: #eaf5fd;
-    color: #1da1f2;
+    color: #029046;
 }
 
 .footer .nav ul {

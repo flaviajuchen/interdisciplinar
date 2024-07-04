@@ -16,6 +16,8 @@ include 'core/init.php';
 
 ?>
 
+
+
 <!doctype html>
 <html>
 
@@ -25,13 +27,13 @@ include 'core/init.php';
     
     <link rel="shortcut icon" type="image/x-icon" href="./assets/images/bird.svg">
     
-      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
     <link rel='stylesheet' href='<?php echo BASE_URL; ?>assets/css/style-complete.css' />
     <link rel='stylesheet' href='<?php echo BASE_URL; ?>assets/css/style.css' />
     <link rel='stylesheet' href='<?php echo BASE_URL; ?>assets/css/font-awesome.css' />
     <link rel='stylesheet' href='<?php echo BASE_URL; ?>assets/css/bootstrap.css' />
     <script src="<?php echo BASE_URL; ?>assets/js/jquery-3.1.1.min.js"></script>
-      	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -80,17 +82,17 @@ include 'core/init.php';
                                 </div>
                                 <div class="profile-follow mt-2 d-flex">
                                     <h6 class="mr-3 ml-1" style="font-weight: 700;"><?php echo $profileData->following; ?>
-                                        <a href="<?php echo BASE_URL.$profileData->username; ?>/following">
-                                            <a href="<?php echo BASE_URL.$profileData->username; ?>/following" style="color:rgb(91, 112, 131);">Following</a>
-                                        </a></h6>
-                                    <h6 class="mr-3"style="font-weight: 700;"><?php echo $profileData->followers; ?>
-                                    <a href="<?php echo BASE_URL.$profileData->username; ?>/followers"style="color:rgb(91, 112, 131);">
-                                        Followers
-                                    </a></h6>
+                                        <a style="color:rgb(91, 112, 131);">Seguindo</a>
+                                    </h6>
+                                    <h6 class="mr-3" style="font-weight: 700;"><?php echo $profileData->followers; ?>
+                                    <a style="color:rgb(91, 112, 131);">Seguidores</a>
+                                    </h6>
                                     <h6 style="font-weight: 700;">
-                                    <?php echo $getFromT->countTweets($profileId); ?>
-                                    <a style="color:rgb(91, 112, 131);">Tweets</a></h6>
+                                        <?php echo $getFromT->countTweets($profileId); ?>
+                                        <a style="color:rgb(91, 112, 131);">Tweets</a>
+                                    </h6>
                                 </div>
+
                             </div>
                         </div>
                     </div>

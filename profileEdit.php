@@ -24,7 +24,9 @@
 				$error = "Country name is too long";
 			}else {
 				 $getFromU->update('users', $user_id, array('screenName' => $screenName, 'bio' => $profileBio, 'country' => $country, 'website' => $website));
-				 header('Location:'.$user->username);
+				//  header('Location:'.$user->username);
+				 header('Location:'."profile.php?username=".$user->username."");
+                // echo '<script>window.location.reload();</script>';
 			}
 		}else{
 			$error = "Name field can't be blank";
@@ -52,7 +54,7 @@
 <html>
 
 <head>
-    <title>Edit Profile - Twitter</title>
+    <title>Editar Perfil - FasipeX</title>
     <meta charset="UTF-8" />
     
     <link rel="shortcut icon" type="image/x-icon" href="./assets/images/bird.svg">
@@ -74,7 +76,7 @@
 
         <div class="main">
 
-            <p class="page_title mb-0"><i class="fa fa-pencil-square-o mr-4" style="color:#50b7f5;"></i>Edit Profile</p>
+            <p class="page_title mb-0"><i class="fa fa-pencil-square-o mr-4" style="color:#50b7f5;"></i>Ediar perfil</p>
 
             <div class='profile-box'>
                 <div class='profile-cover mt-0'>
@@ -86,7 +88,7 @@
                                 <i class="fa fa-camera" aria-hidden="true"></i>
                             </label>
                             <span class="span-text1">
-                                Change your profile photo
+                                Altere sua foto
                             </span>
                             <input id="cover-upload-btn" type="checkbox" />
                             <div class="img-upload-menu1">
@@ -95,13 +97,13 @@
                                     <ul>
                                         <li>
                                             <label for="file-up">
-                                                Upload photo
+                                                Carregar foto
                                             </label>
                                             <input type="file" onchange="this.form.submit();" name="profileCover" id="file-up" />
                                         </li>
                                         <li>
                                             <label for="cover-upload-btn">
-                                                Cancel
+                                                Cancelar
                                             </label>
                                         </li>
                                     </ul>
@@ -127,15 +129,15 @@
                                             <ul>
                                                 <li>
                                                     <label for="profileImage">
-                                                        Upload photo
+                                                        Carregar foto
                                                     </label>
                                                     <input id="profileImage" type="file" onchange="this.form.submit();" name="profileImage" />
 
                                                 </li>
-                                                <li><a href="#">Remove</a></li>
+                                                <li><a href="#">Remover</a></li>
                                                 <li>
                                                     <label for="img-upload-btn">
-                                                        Cancel
+                                                        Cancelar
                                                     </label>
                                                 </li>
                                             </ul>
@@ -147,7 +149,7 @@
                         </div>
                         <div class="edit-button d-flex">
                             <span>
-                                <button class="new-btn mr-3" type="button" onclick="window.location.href='<?php echo BASE_URL.$user->username;?>'" value="Cancel" style="outline:none;">Cancel</button>
+                                <button class="new-btn mr-3" type="button" onclick="window.location.href='<?php echo BASE_URL."profile.php?username=".$user->username."";?>'" value="Cancel" style="outline:none;">Cancel</button>
                             </span>
                             <span>
                                 <button class="new-btn" type="submit" id="save" value="Save Changes" style="outline:none;">Save</button>
@@ -172,15 +174,15 @@
                             </div>
 
                             <div class="form-group">
-                               <label class="ml-1">Location</label>
+                               <label class="ml-1">Localização</label>
                                 <input class="form-control" id="cn" type="text" name="country" placeholder="Country" value="<?php echo $user->country;?>" />
                             </div>
 
 
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                <label class="ml-1">Website</label>
                                 <input class="form-control" type="text" name="website" placeholder="Website" value="<?php echo $user->website;?>" />
-                            </div>
+                            </div> -->
 
                             <div class="profile-bio-wrap">
                                 <div class="form-group">

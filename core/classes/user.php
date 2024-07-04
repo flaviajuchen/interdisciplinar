@@ -194,7 +194,7 @@ class User{
 					if($fileSize <= 2097152){
 
 		 				$root = 'users/' . $filename;
-					  	 move_uploaded_file($fileTmp,$_SERVER['DOCUMENT_ROOT'].'/twitter/'.$root);
+					  	 move_uploaded_file($fileTmp,$_SERVER['DOCUMENT_ROOT'].'/interdisciplinar/'.$root);
 						 return $root;
 
 					}else{

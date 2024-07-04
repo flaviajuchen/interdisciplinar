@@ -12,6 +12,6 @@
     $getFromF = new Follow($pdo);
     $getFromM = new Message($pdo);
   
-  	define('BASE_URL', 'http://localhost/twitter/');
+  	define('BASE_URL', 'http://localhost/interdisciplinar/');
  ?>                                                   
  

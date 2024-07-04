@@ -29,12 +29,12 @@
 				</div>
 				<div class="tweet-show-popup-name">
 					<div class="t-s-p-n">
-						<a href="<?php echo BASE_URL.$tweet->username;?>">
+						<a href="<?php echo BASE_URL."profile.php?username=".$tweet->username;?>">
 							<?php echo $tweet->screenName;?>
 						</a>
 					</div>
 					<div class="t-s-p-n-b">
-						<a href="<?php echo BASE_URL.$tweet->username;?>">
+						<a href="<?php echo BASE_URL."profile.php?username=".$tweet->username;?>">
 							@<?php echo $tweet->username;?>
 						</a>
 					</div>
@@ -96,7 +96,7 @@
 							<li>
 								<a href="#" class="more"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
 								<ul> 
-								  <li><label class="deleteTweet" data-tweet="'.$tweet->tweetID.'">Delete Tweet</label></li>
+								  <li><label class="deleteTweet" data-tweet="'.$tweet->tweetID.'">TDelete weet</label></li>
 								</ul>
 							</li>' : '').'
 						' : '
@@ -152,14 +152,14 @@
 								<div class="tweet-show-popup-comment-head-right">
 									  <div class="tweet-show-popup-comment-name-box">
 									 	<div class="tweet-show-popup-comment-name-box-name"> 
-									 		<a href="'.BASE_URL.$comment->username.'">'.$comment->screenName.'</a>
+									 		<a href="'.BASE_URL."profile.php?username=".$comment->username.'">'.$comment->screenName.'</a>
 									 	</div>
 									 	<div class="tweet-show-popup-comment-name-box-tname">
-									 		<a href="'.BASE_URL.$comment->username.'">@'.$comment->username.'</a>
+									 		<a href="'.BASE_URL."profile.php?username=".$comment->username.'">@'.$comment->username.'</a>
 									 	</div>
 									 </div>
 									 <div class="tweet-show-popup-comment-right-tweet">
-									 		<p><a href="'.BASE_URL.$tweet->username.'">@'.$tweet->username.'</a> '.$comment->comment.'</p>
+									 		<p><a href="'.BASE_URL."profile.php?username=".$tweet->username.'">@'.$tweet->username.'</a> '.$comment->comment.'</p>
 									 </div>
 								 	<div class="tweet-show-popup-footer-menu">
 										<ul>

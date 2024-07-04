@@ -66,7 +66,7 @@ if ( isset( $_POST['tweet'] ) ) {
             <div class=''>
                 <div class=''>
 
-                    <p class="page_title mb-0">Home</p>
+                    <p class="page_title mb-0">Início</p>
                     <div class='tweet_box tweet_add'>
                         <div class='left-tweet ml-3'>
                             <!-- Imagem perfil -->

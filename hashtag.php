@@ -17,7 +17,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>#<?php echo $hashtag;?> Hashtag on Tweety</title>
+		<title>#<?php echo $hashtag;?> Hashtag no Tweety</title>
 		<meta charset="UTF-8" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
         <link rel="stylesheet" href="assets/css/font-awesome.css"/>
@@ -53,8 +53,8 @@
 				<div class="drop-wrap">
 					<div class="drop-inner">
 						<ul>
-							<li><a href="<?php echo BASE_URL.$user->username;?>"><?php echo $user->username;?></a></li>
-							<li><a href="<?php echo BASE_URL;?>settings/account">Settings</a></li>
+							<li><a href="<?php echo BASE_URL."profile.php?username=".$user->username.""?>"><?php echo $user->username;?></a></li>
+							<li><a href="<?php echo BASE_URL;?>settings/account">Configurações</a></li>
 							<li><a href="<?php echo BASE_URL;?>includes/logout.php">Log out</a></li>
 						</ul>
 					</div>
@@ -207,7 +207,7 @@
 							</div>
 							<div class="t-s-head-content">
 								<div class="t-h-c-name">
-									<span><a href="'.BASE_URL.$user->username.'">'.$user->screenName.'</a></span>
+									<span><a href="'.BASE_URL."profile.php?username=".$user->username.'">'.$user->screenName.'</a></span>
 									<span>@'.$user->username.' </span>
 									<span>'.$getFromT->timeAgo(isset($retweet['postedOn'])).'</span>
 								</div>
@@ -245,7 +245,7 @@
 									</div>
 									<div class="t-s-head-co	ntent">
 										<div class="t-h-c-name">
-											<span><a href="'.BASE_URL.$tweet->username.'">'.$tweet->screenName.'</a></span>
+											<span><a href="'.BASE_URL."profile.php?username=".$tweet->username.'">'.$tweet->screenName.'</a></span>
 											<span>@'.$tweet->username.'</span>
 											<span>'.$getFromT->timeAgo($tweet->postedOn).'</span>
 										</div>

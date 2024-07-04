@@ -67,15 +67,15 @@ if(isset($_POST['signup'])){
     ?>    
     <div class="signup-form">
             <div class="form-group">
-              <input class="form-control" type="text" name="screenName" placeholder="Full Name" />
+              <input class="form-control" type="text" name="screenName" placeholder="Nome"/>
             </div>
             <div class="form-group">
-              <input class="form-control" type="email" name="email" placeholder="Email" />
+              <input class="form-control" type="email" name="email" placeholder="Email"/>
             </div>
             <div class="form-group">
-              <input class="form-control" type="password" name="password" placeholder="Password" />
+              <input class="form-control" type="password" name="password" placeholder="Senha"/>
             </div>
-            <input class="new-btn m-auto mt-5" type="submit" name="signup" Value="Signup">
+            <input class="new-btn m-auto mt-5" type="submit" name="signup" Value="Inscrever-se"/>
           </div>
 
 </form>

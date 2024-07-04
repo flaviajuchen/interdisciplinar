@@ -22,14 +22,14 @@
 								<div class="tweet-show-popup-comment-head-right">
 									  <div class="tweet-show-popup-comment-name-box">
 									 	<div class="tweet-show-popup-comment-name-box-name"> 
-									 		<a href="'.BASE_URL.$comment->username.'">'.$comment->screenName.'</a>
+									 		<a href="'.BASE_URL."profile.php?username=".$comment->username.'">'.$comment->screenName.'</a>
 									 	</div>
 									 	<div class="tweet-show-popup-comment-name-box-tname">
-									 		<a href="'.BASE_URL.$comment->username.'">@'.$comment->username.'</a>
+									 		<a href="'.BASE_URL."profile.php?username=".$comment->username.'">@'.$comment->username.'</a>
 									 	</div>
 									 </div>
 									 <div class="tweet-show-popup-comment-right-tweet">
-									 		<p><a href="'.BASE_URL.$tweet->username.'">@'.$tweet->username.'</a> '.$comment->comment.'</p>
+									 		<p><a href="'.BASE_URL."profile.php?username=".$tweet->username.'">@'.$tweet->username.'</a> '.$comment->comment.'</p>
 									 </div>
 								 	<div class="tweet-show-popup-footer-menu">
 										<ul>

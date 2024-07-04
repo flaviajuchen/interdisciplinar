@@ -12,14 +12,14 @@ if ($_SERVER['REQUEST_METHOD'] == "GET" && realpath(__FILE__) == realpath($_SERV
       $password = $getFromU->checkInput($password);
 
       if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $errorMsg = "Invalid format";
+        $errorMsg = "Formato inválido";
       }else {
         if($getFromU->login($email, $password) === false){
-          $errorMsg = "The email or password is incorrect!";
+          $errorMsg = "O e-mail ou senha está incorreto!";
         }
       }
     }else {
-      $errorMsg = "Please enter username and password!";
+      $errorMsg = "Por favor insira nome de usuário e senha!";
     }
   }
 ?>
@@ -47,10 +47,10 @@ if ($_SERVER['REQUEST_METHOD'] == "GET" && realpath(__FILE__) == realpath($_SERV
     <div class="top">
         <form method="post" autocomplete="off">
         
-        <h1 class="mb-4 " style="text-align:center;">Log in to twitter</h1>
+        <h1 class="mb-4 " style="text-align:center;">Faça login no FasipeX</h1>
         <div class="form-group  form-row">
             <input class="form-control col-4 mr-3 ml-5 mt-1 p-3" name="email" type="text" placeholder="Email" style="height:50px;" />
-            <input class="form-control col-4 mr-3 mt-1 p-3" name="password" type="password" placeholder="Password" style="height:50px;"/>
+            <input class="form-control col-4 mr-3 mt-1 p-3" name="password" type="password" placeholder="Senha" style="height:50px;"/>
         
         <input class="new-btn col-2 mt-1" name="login" type="submit" value="login" style="height: 50px; font-size:20px;">
         </div>

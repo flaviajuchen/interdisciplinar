@@ -14,6 +14,8 @@
         //delete the file
         unlink($imageLink);
       }
+      
+      echo '<script>window.location.reload()</script>';
      }
 
     if(isset($_POST['showpopup']) && !empty($_POST['showpopup'])){
@@ -26,7 +28,7 @@
   <div class="wrap5">
     <div class="retweet-popup-body-wrap">
       <div class="retweet-popup-heading">
-        <h3>Are you sure you want to delete this Tweet?</h3>
+        <h3>Tem certeza de que deseja excluir este Tweet?</h3>
         <span><button class="close-retweet-popup"><i class="fa fa-times" aria-hidden="true"></i></button></span>
       </div>
        <div class="retweet-popup-inner-body">
@@ -48,7 +50,7 @@
       </div>
       <div class="retweet-popup-footer"> 
         <div class="retweet-popup-footer-right">
-          <button class="cancel-it f-btn">Cancel</button><button class="delete-it" data-tweet="<?php echo $tweet->tweetID;?>" type="submit">Delete</button>
+          <button class="cancel-it f-btn">Cancelar</button><button class="delete-it" data-tweet="<?php echo $tweet->tweetID;?>" type="submit">Excluir</button>
         </div>
       </div>
     </div>

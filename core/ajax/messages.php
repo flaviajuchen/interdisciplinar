@@ -37,21 +37,21 @@
 						<label for="mass"><i class="fa fa-angle-left" aria-hidden="true"></i></label>
 					</div>
 					<div class="message-h-cen">
-						<h4>New message</h4>
+						<h4>Nova mensagem</h4>
 					</div>
 					<div class="message-h-right">
 						<label for="popup-message-tweet" ><i class="fa fa-times" aria-hidden="true"></i></label>
 					</div>
 				</div>
 				<div class="form-group p-2">
-					<h4>Send message to:</h4>
+					<h4>Enviar mensagem para:</h4>
 				  	<input type="text" placeholder="Search people" class="search-user form-control"/>
 					<ul class="search-result down">
 							
 					</ul>
 				</div>
 				<div class="message-body">
-					<h4>Recent</h4>
+					<h4>Recentes</h4>
 					<div class="message-recent">
 					<?php foreach($messages as $message) :?>
 						<div class="people-message" data-user="<?php echo $message->user_id;?>">
@@ -79,10 +79,10 @@
 				<div class="back">
 					<div class="back-header">
 						<div class="back-left">
-							Direct message
+							Mensagem direta
 						</div>
 						<div class="back-right">
-							<label for="mass"  class="new-message-btn">New messages</label>
+							<label for="mass"  class="new-message-btn">Nova mensagem</label>
 							<label for="popup-message-tweet"><i class="fa fa-times" aria-hidden="true"></i></label>
 						</div>
 					</div>
@@ -144,13 +144,14 @@
 				</div>
 				<div class="message-del">
 					<div class="message-del-inner">
-						<h4>Are you sure you want to delete this message? </h4>
+						<h4>
+						Você tem certeza que quer deletar esta mensagem? </h4>
 						<div class="message-del-box">
 							<span>
-								<button class="cancel mb-2" value="Cancel">Cancel</button>
+								<button class="cancel mb-2" value="Cancel">Cancelar</button>
 							</span>
 							<span>	
-								<button class="delete mb-2" value="Delete">Delete</button>
+								<button class="delete mb-2" value="Delete">Deletar</button>
 							</span>
 						</div>
 					</div>

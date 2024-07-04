@@ -15,7 +15,7 @@
 <html>
 
 <head>
-    <title>Notifications - Twitter</title>
+    <title>Notificações - FasipeX</title>
     <meta charset="UTF-8" />
     
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo BASE_URL; ?>assets/images/bird.svg">
@@ -43,18 +43,18 @@
 
         <div class="main">
 
-                    <p class="page_title mb-0">Notifications</p>
+                    <p class="page_title mb-0">Notificações</p>
                     <div class="notification-full-wrapper">
 
                         <div class="notification-full-head">
                             <div>
-                                <a href="#">All</a>
+                                <a href="#">Tudo</a>
                             </div>
                             <div>
-                                <a href="#">Mention</a>
+                                <a href="#">Menções</a>
                             </div>
                             <div>
-                                <a href="#">settings</a>
+                                <a href="#">Configurações</a>
                             </div>
                         </div>
                         <?php foreach($notification as $data) :?>
@@ -108,7 +108,7 @@
                                     <div class="noti-footer-inner">
                                         <div class="noti-footer-inner-left">
                                             <div class="t-h-c-name">
-                                                <span><a href="<?php echo BASE_URL.$user->username;?>"><?php echo $user->username;?></a></span>
+                                                <span><a href="<?php echo BASE_URL."profile.php?username=".$user->username."";?>"><?php echo $user->username;?></a></span>
                                                 <span>@<?php echo $user->username;?></span>
                                                 <span><?php echo $getFromU->timeAgo($data->postedOn);?></span>
                                             </div>
@@ -146,7 +146,7 @@
 
                                             <div class="noti-footer-inner-left">
                                                 <div class="t-h-c-name">
-                                                    <span><a href="<?php echo BASE_URL.$user->username;?>"><?php echo $user->screenName;?></a></span>
+                                                    <span><a href="<?php echo BASE_URL."profile.php?username=".$user->username.""?>"><?php echo $user->screenName;?></a></span>
                                                     <span>@<?php echo $user->username;?></span>
                                                     <span><?php echo $getFromU->timeAgo($data->postedOn);?></span>
                                                 </div>
@@ -184,7 +184,7 @@
 									</div>
 									<div class="t-s-head-co	ntent">
 										<div class="t-h-c-name">
-											<span><a href="'.BASE_URL.$tweet->username.'">'.$tweet->screenName.'</a></span>
+											<span><a href="'.BASE_URL."profile.php?username=".$tweet->username.'">'.$tweet->screenName.'</a></span>
 											<span>Mentioned you - </span>
 											<span>'.$getFromT->timeAgo($tweet->postedOn).'</span>
 										</div>

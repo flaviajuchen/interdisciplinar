@@ -17,7 +17,7 @@
 <div class="wrap5">
 	<div class="retweet-popup-body-wrap">
 		<div class="retweet-popup-heading">
-			<h3>Retweet this to followers?</h3>
+			<h3>Retuitar isso para os seguidores?</h3>
 			<span><button class="close-retweet-popup"><i class="fa fa-times" aria-hidden="true" style="outline:none;"></i></button></span>
 		</div>
 		<div class="retweet-popup-input">

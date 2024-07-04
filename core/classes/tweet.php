@@ -37,7 +37,7 @@ class Tweet extends User{
 			        	</div>
 			        	<div class="t-s-head-content">
 			        		<div class="t-h-c-name">
-			        			<span><a href="'.BASE_URL.$user->username.'">'.$user->screenName.'</a></span>
+			        			<span><a href="'.BASE_URL."profile.php?username=".$user->username.'">'.$user->screenName.'</a></span>
 			        			<span>@'.$user->username.'</span>
 			        			<span>'.$this->timeAgo($tweet->postedOn).'</span>
 
@@ -56,7 +56,7 @@ class Tweet extends User{
 			        			</div>' : '').'
 			        			<div>
 			        				<div class="t-h-c-name">
-			        					<span><a href="'.BASE_URL.$tweet->username.'">'.$tweet->screenName.'</a></span>
+			        					<span><a href="'.BASE_URL."profile.php?username=".$tweet->username.'">'.$tweet->screenName.'</a></span>
 			        					<span>@'.$tweet->username.'</span>
 			        					<span>'.$this->timeAgo($tweet->postedOn).'</span>
 			        				</div>
@@ -76,7 +76,7 @@ class Tweet extends User{
 			      			</div>
 			      			<div class="t-s-head-content ">
 			      				<div class="t-h-c-name media-body">
-			      					<span><a href="'.$tweet->username.'">'.$tweet->screenName.'</a></span>
+			      					<span><a href="'.BASE_URL."profile.php?username=".$tweet->username.'">'.$tweet->screenName.'</a></span>
 			      					<span>@'.$tweet->username.'</span>
 			      					<span>'.$this->timeAgo($tweet->postedOn).'</span>
 			      				</div>
@@ -216,11 +216,11 @@ class Tweet extends User{
 	public function getTweetLinks($tweet){
 		$tweet = preg_replace("/(https?:\/\/)([\w]+.)([\w\.]+)/", "<a href='$0' target='_blink'>$0</a>", $tweet);
         
-        //$tweet = preg_replace("/#([\w]+)/", "<a href='http://localhost/twitter/hashtag/$1'>$0</a>", $tweet);		
+        //$tweet = preg_replace("/#([\w]+)/", "<a href='http://localhost/interdisciplinar/hashtag/$1'>$0</a>", $tweet);		
         
-		$tweet = preg_replace("/#([\w]+)/", "<a href='http://localhost/twitter/$1'>$0</a>", $tweet);	
+		$tweet = preg_replace("/#([\w]+)/", "<a href='http://localhost/interdisciplinar/$1'>$0</a>", $tweet);	
         
-		$tweet = preg_replace("/@([\w]+)/", "<a href='http://localhost/twitter/$1'>$0</a>", $tweet);
+		$tweet = preg_replace("/@([\w]+)/", "<a href='http://localhost/interdisciplinar/$1'>$0</a>", $tweet);
 		return $tweet;		
 	}
 

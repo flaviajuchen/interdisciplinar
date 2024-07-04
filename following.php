@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
  	if(isset($_GET['username']) === true && empty($_GET['username']) === false){
 		include 'core/init.php';
 		$username    = $getFromU->checkInput($_GET['username']);
@@ -23,18 +23,18 @@
 <html>
 
 <head>
-    <title>People followed by <?php echo $profileData->screenName. ' (@'.$profileData->username.')';?></title>
+    <title>Pessoas seguidas por <?php echo $profileData->screenName. ' (@'.$profileData->username.')';?></title>
     <meta charset="UTF-8" />
     
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo BASE_URL; ?>assets/images/bird.svg">
     
-    		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
     <link rel='stylesheet' href='<?php echo BASE_URL; ?>assets/css/font-awesome.css' />
     <link rel='stylesheet' href='<?php echo BASE_URL; ?>assets/css/bootstrap.css' />
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style-complete.css" />
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.css" />
     <script src="<?php echo BASE_URL; ?>assets/js/jquery-3.1.1.min.js"></script>
-    		<script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -61,7 +61,7 @@
                                     <span>
                                         <?php echo $getFromF->followBtn($profileId, $user_id, $profileData->user_id); ?>
                                     </span>
-                                </div>
+                                </div> 
                             </div>
                             <div class="profile-text">
                                 <div class="profile-name">
@@ -82,8 +82,8 @@
                                 </div>
                                 <div class="profile-follow mt-2 d-flex">
                                     <h6 class="mr-3 ml-1" style="font-weight: 700;"><?php echo $profileData->following; ?>
-                                        <a href="<?php echo BASE_URL.$profileData->username; ?>/following">
-                                            <a href="<?php echo BASE_URL.$profileData->username; ?>/following" style="color:rgb(91, 112, 131);">Following</a>
+                                        <a href="<?php echo BASE_URL."profile.php?username=".$profileData->username; ?>/following">
+                                            <a href="<?php echo BASE_URL."profile.php?username=".$profileData->username; ?>/following" style="color:rgb(91, 112, 131);">Following</a>
                                         </a></h6>
                                     <h6 class="mr-3" style="font-weight: 700;"><?php echo $profileData->followers; ?>
                                         <a href="<?php echo BASE_URL.$profileData->username; ?>/followers" style="color:rgb(91, 112, 131);">
@@ -136,4 +136,4 @@
     </div>
 </body>
 
-</html>
+</html> -->

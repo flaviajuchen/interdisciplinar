@@ -2,7 +2,7 @@
 
 :root{
 /*    --twitter-color: #50b7f5;*/
-    --twitter-color: rgb(29, 161, 242);
+    --twitter-color: #029046;
     --twitter-background: #e6ecf0;
 /*    --twitter-background: rgba(230, 236, 240, 0.9);*/
 }
@@ -70,7 +70,7 @@ input[type="submit"]:active{
 }
 .nav ul li .fa-twitter{
 	margin-right: 4px;
-	color: #5ab2f5;
+	color: #25c9a5;
 	font-size: 22px;
 	position: relative;
 	top: 2px;
@@ -161,7 +161,7 @@ input[type="submit"]:active{
 	border: 1px solid #333;
 	border-radius: 3px;
 	padding: 4px 15px;
-	background: #0a88e9;
+	background: #029046;
 	color: white;
 	font-weight: bold;
 	cursor:pointer;
@@ -302,8 +302,8 @@ box-shadow: inset 0px -4px 0px #6cc854;}
     height: 30px;
 }
 .nav .nav-right ul li label{
-	background: #5ab2f5;
-	border: 1px solid #5ab2f5;
+	background: #029046;
+	border: 1px solid #029046;
 	padding: 8px 20px;
 	border-radius: 4px;
 	color: #fff;
@@ -315,7 +315,7 @@ box-shadow: inset 0px -4px 0px #6cc854;}
 }
 
 .nav .nav-right ul li input[type="submit"]:hover{
-	background:#2492e6;
+	background:#029046;
 }
 .nav .nav-right ul li .fa{
 	left: -20px;
@@ -388,7 +388,7 @@ box-shadow: inset 0px -4px 0px #6cc854;}
     background: rgba(163, 207, 234, 0.37);
     border-radius: 20px;
     max-width: 80%;
-    color: #359cf5; 
+    color: #029046; 
 }
 
 .info-box{
@@ -621,7 +621,7 @@ box-shadow: inset 0px -4px 0px #6cc854;}
 .fo-co-footer a .fa{
 	position: relative;
 	left: -2px;
-	color: #5ab2f5;
+	color: #029046;
 }
 .follow-cut{
 	width:10%;
@@ -743,7 +743,7 @@ box-shadow: inset 0px -4px 0px #6cc854;}
 }
 .view-tweets a{
 	text-decoration: none;
-	color: #007cc0;
+	color: #04695c;
 }
 .view-tweets a:hover{
 	text-decoration:underline;
@@ -820,14 +820,14 @@ box-shadow: inset 0px -4px 0px #6cc854;}
 /*    background: red;*/
 }
 .t-h-c-dis a{
-	color:#6dbeef;
+	color:#029046;
 	text-decoration:none;
 	cursor:pointer;
 	font-weight: bold;
  }
 .t-h-c-dis a:hover{
 	text-decoration: underline;
-    color:#6dbeef;
+    color:#029046;
 }
 .t-show-body{
 	max-height: 550px;
@@ -909,7 +909,7 @@ box-shadow: inset 0px -4px 0px #6cc854;}
 	color: rgb(224, 36, 94);
 }
 .t-s-f-right ul li button.retweet > .fa-share , .t-s-f-right ul li button.retweeted> .fa-retweet, .tweet-show-popup-footer-menu ul li button.retweeted, .img-popup-tweet-menu-inner > ul > li > button.retweeted{
-	color:skyblue;
+	color:rgb(101, 230, 212);
 }
 .t-s-f-right ul li a:hover> .fa-heart-o{
 	color:red;
@@ -919,7 +919,7 @@ box-shadow: inset 0px -4px 0px #6cc854;}
 	color:red;
 }
 .t-s-f-right ul li button:hover> .fa-retweet{
-	color:skyblue;
+	color:rgb(101, 230, 212);
 }
 .t-s-f-right ul li button:hover> .fa-share{
 	color:#9dc5a2;
@@ -1146,7 +1146,7 @@ box-shadow: inset 0px -4px 0px #6cc854;}
 	height: 20px;
 	margin: 10px auto;
 	border-radius: 4px;
-	border-color: skyblue;
+	border-color: #029046;
 	padding: 10px 10px;
 }
 .message-people{
@@ -1212,7 +1212,7 @@ box-shadow: inset 0px -4px 0px #6cc854;}
 }
 .ms-fo-right label{
 	color: rgb(255, 255, 255);
-	background: rgb(74, 187, 240) none repeat scroll 0% 0%;
+	background: #029046 none repeat scroll 0% 0%;
 	padding: 10px 20px;
 	border-radius: 4px;
 }
@@ -1417,7 +1417,7 @@ box-shadow: inset 0px -4px 0px #6cc854;}
 }
 
 .msg{
-	background: skyblue;
+	background: rgb(101, 230, 212);
 	color: white;
 	padding: 10px;
 	top: 3px;
@@ -1474,7 +1474,7 @@ box-shadow: inset 0px -4px 0px #6cc854;}
 
 
 .msg-l{
-	background: skyblue;
+	background: rgb(101, 230, 212);
 	color: white;
 	padding: 10px;
 	top: 5px;
@@ -1619,7 +1619,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc800', end
 .nav-wrapper{
 	width:100%;
 	height:50px;
-	background:#5ab2f5;
+	background:#029046;
 	border-bottom: 1px solid #e6e6e6;
 }
 
@@ -1671,7 +1671,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc800', end
 }
 .step-container input[type="submit"]{
 	width: 100%;
-	background: #5ab2f5;
+	background: #029046;
 	border: 1px solid #ccc;
 	color: white;
 	padding: 10px 0px;
@@ -1682,7 +1682,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc800', end
 }
 
 .step-container input[type="submit"]:hover{
-	background:#49a2e6;
+	background:#029046;
 }
 
 .step-container div{
@@ -1692,7 +1692,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc800', end
 
 .step-container div a,.step-container span a{
 	text-decoration:none;
-	color: #008bf5;
+	color: #029046;
 }
 
 .step-container div a:hover,.step-container span a:hover{
@@ -1713,7 +1713,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc800', end
 	margin: 10px 0px;
 }
 .step-letsgo input[type="submit"]{
-	background: #5ab2f5;
+	background: #029046;
 	border: 1px solid #ccc;
 	padding: 8px 20px;
 	border-radius: 4px;
@@ -1722,7 +1722,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc800', end
 	cursor: pointer;
 }
 .step-letsgo input[type="submit"]:hover{
-	background: #3496e1;
+	background: #029046;
 }
 .nav-thd {
 	height: 50px;
@@ -1732,7 +1732,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc800', end
 }
 .nav-thd ul li .fa{
 	margin-right: 4px;
-	color: #5ab2f5;
+	color: #029046;
 	font-size: 22px;
 	position: relative;
 	line-height: 50px;
@@ -1763,7 +1763,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc800', end
 	width: 185px;
 }
 .in-h-right div input[type="submit"]{
-	background: #5ab2f5;
+	background: #029046;
 	color: white;
 	border: 1px}
 
@@ -2006,10 +2006,10 @@ label{
 	line-height: 15px;	
 }
 .profile-navigation ul li:hover{
-	box-shadow: inset 0px -4px 0px #449ada;
+	box-shadow: inset 0px -4px 0px #029046;
 }
 .profile-navigation ul li:hover> a> .n-head{
-	color:#449ada;
+	color:#029046;
 }
 .profile-navigation ul li a{
 	text-decoration:none;
@@ -2022,7 +2022,7 @@ label{
 }
 .n-bottom{
 	font-size: 20px;
-	color: #0e749e;
+	color: #029046;
 }
 .profile-info-wrap{
 
@@ -2055,7 +2055,7 @@ label{
 }
 .profile-bio-wrap a{
 	text-decoration: none;
-	color: #3198ef;
+	color: #029046;
 }
 .profile-bio-wrap a:hover{
 	text-decoration:underline;
@@ -2072,7 +2072,7 @@ label{
 }
 .profile-extra-inner ul li a{
 	text-decoration:none;
-	color: #3198ef;
+	color: #029046;
 }
 .profile-extra-inner ul li a:hover{
 	text-decoration:underline;
@@ -2102,7 +2102,7 @@ label{
 }
 .profile-ex-location a{
 	text-decoration: none;
-	color: #1198d7;
+	color: #029046;
 }
 
 .edit-button{
@@ -2201,7 +2201,7 @@ box-shadow: inset 0px 0px 3px;}
 	font-weight: bold;
 	line-height: 25px;
 	cursor: pointer;
-	background: #3da6ff;
+	background: #029046;
     height: 35px;
     width: 120px;
 }
@@ -2249,12 +2249,12 @@ box-shadow: inset 0px 0px 3px;}
 }
 
 .edit-button input[type="submit"]#save{
-	background-color:skyblue;
+	background-color:rgb(101, 230, 212);
 	color: #fff;
 }
 
 .edit-button input[type="submit"]#save:hover{
-	background-color: #3babd8;
+	background-color: #029046;
 }
 
 
@@ -2269,7 +2269,7 @@ box-shadow: inset 0px 0px 3px;}
 }
 
 .following-box{
-    width: 100%;
+    width: 100%;v
     height: auto;
 /*    background: lightgreen;*/
     margin-bottom:;
@@ -2380,9 +2380,9 @@ background-image: linear-gradient(#fff,#f5f8fa);
 
 button.btn.following{
     color: #fff;
-    background-color: #1da1f2;
+    background-color: #029046;
     background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.05));
-    border: 1px solid #3FAFF4;
+    border: 1px solid #029046;
     box-shadow: inset 0 2px 0 rgba(206, 181, 181, 0.2);
     font-weight: bold;
     padding: 3px 13px;
@@ -2557,7 +2557,7 @@ button.btn.unfollow{
 }
 .tweet-retweet-count-body{
 	font-size: 17px;
-	color: #2682e9;
+	color: #029046;
 }
 .tweet-like-count-wrap{
 	width: 50%;
@@ -2570,7 +2570,7 @@ button.btn.unfollow{
 }
 .tweet-like-count-body{
 	font-size: 17px;
-	color: #2682e9;
+	color: #029046;
 }
 .tweet-show-popup-retweet-right{
 	width: 70%;
@@ -2578,7 +2578,7 @@ button.btn.unfollow{
 	padding: 10px 0px;
 }
 .tweet-retweet-count-head:hover, .tweet-like-count-head:hover{
-	color: #2682e9;
+	color: #029046;
 	cursor: pointer;
 }
 .tweet-show-popup-retweet-right ul li{
@@ -2617,7 +2617,7 @@ button.btn.unfollow{
 	font-size: 15px;
 }
 .tweet-show-popup-footer-menu .fa-retweet:hover{
-	color: #2682e9;
+	color: #029046;
 }
 .tweet-show-popup-footer-menu .fa-heart-o:hover{
 	color:red;
@@ -2644,7 +2644,7 @@ button.btn.unfollow{
 	padding: 10px 15px;
 }
 .tweet-show-popup-footer-menu ul li ul li:hover{ 
-	background: #158df3;
+	background: #029046;
 	color: #fff;
 }
 .tweet-show-popup-footer-menu ul li:nth-child(4):hover> ul{
@@ -2694,7 +2694,7 @@ button.btn.unfollow{
 }
 .tweet-show-popup-footer-input-right input[type="text"]{
 	padding: 6px 6px;
-    border: 1px solid #91bdff;
+    border: 1px solid #71ceaf;
     width: 85%;
     margin-top: 5px;
     margin-left: 7px;
@@ -2751,7 +2751,7 @@ overflow: hidden;
 }
 .tweet-show-popup-comment-right-tweet a{
 	text-decoration: none;
-	color: #138cbd;
+	color: #029046;
 	margin-right: 5px;
 }
 .tweet-show-popup-comment-name-box{
@@ -2802,14 +2802,14 @@ overflow: hidden;
 
 /*****************************************************************/
 .new-message-btn{
-  background: rgb(6, 172, 249) none repeat scroll 0% 0%;
+  background: #029046 none repeat scroll 0% 0%;
   margin-right: 15px;
   color: rgb(255, 255, 255);
   border-radius: 4px;
   cursor: pointer;
 }
 .new-message-btn:hover{
-  background: rgb(24, 154, 215) none repeat scroll 0% 0%;
+  background: #029046 none repeat scroll 0% 0%;
 }
 
 
@@ -3118,7 +3118,7 @@ border-bottom: 1px solid #e9e9e9;
 
 .acc-right input[type="submit"]{
 	color: #fff;
-	background: skyblue;
+	background: rgb(101, 230, 212);
 	border: 1px solid #ededed;
 	padding: 5px;
 	border-radius: 4px;
@@ -3127,7 +3127,7 @@ border-bottom: 1px solid #e9e9e9;
 }
 
 .acc-right input[type="submit"]:hover{
-	background:#35aee0;
+	background:#029046;
 }
 
 
@@ -3258,7 +3258,7 @@ border-bottom: 1px solid #e9e9e9;
     top: -12px;
     font-size: 10px;
 */
-    background: #6dbeef;
+    background: #029046;
     padding: 1px 5px;
     border-radius: 7px;
     border: 2px solid #fff;
@@ -3403,7 +3403,7 @@ border-bottom: 1px solid #e9e9e9;
 	margin-right: 0px;
 }
 .img-popup-tweet-menu-inner ul li ul:hover li{
-	background: #43a2ff;
+	background: #029046;
 	color: white;
 	width: auto;
 	overflow: hidden;
@@ -3433,7 +3433,7 @@ border-bottom: 1px solid #e9e9e9;
 	cursor: pointer;
 }
 .img-popup-tweet-menu-inner > ul > li > button.retweeted > i {
-	color: skyblue;
+	color: rgb(101, 230, 212);
  }
  .img-popup-tweet-menu-inner > ul > li > button.unlike-btn > i {
 	color: red;
@@ -3460,7 +3460,7 @@ border-bottom: 1px solid #e9e9e9;
 	color: red;
 }
 .img-popup-tweet-menu-inner ul li:hover > button.retweet > i.fa-retweet{
-	color: skyblue;
+	color: rgb(101, 230, 212);
 }
 .img-popup-tweet-menu-inner ul li:hover > button > i > .retweet-span{
 	color: #21f27c;
@@ -3469,7 +3469,7 @@ border-bottom: 1px solid #e9e9e9;
 	color: #21f27c;
 }
 .img-popup-tweet-menu-inner ul li:hover > button > i.fa-retweet{
-	color: skyblue;
+	color: rgb(101, 230, 212);
 }
 .img-popup-tweet-menu-inner ul li i{
 	color: #B1B1B1;
@@ -3679,7 +3679,7 @@ border-bottom: 1px solid #e9e9e9;
 	float: right;
 }
 .retweet-popup-footer-right button[type="submit"]{
-	background: #3a8efb;
+	background: #029046;
 	padding: 8px 10px;
 	border: 1px solid #E7E7E7;
 	color: #fff;
@@ -3689,13 +3689,13 @@ border-bottom: 1px solid #e9e9e9;
 	cursor: pointer;
 }
 .retweet-popup-footer-right button[type="submit"]:hover{
-	background: #499bea; 
-	background: -moz-linear-gradient(top, #499bea 0%, #207ce5 100%);
-	background: -webkit-linear-gradient(top, #499bea 0%,#207ce5 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ); 
+	background: #44e983; 
+	background: -moz-linear-gradient(top, #44e983 0%, #029046 100%);
+	background: -webkit-linear-gradient(top, #44e983 0%,#029046 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44e983', endColorstr='#029046',GradientType=0 ); 
 }
 .retweet-popup-footer-right button[type="submit"]:active{
-	background: #3a8efb;
+	background: #029046;
 	box-shadow: inset 0px 0px 3px black;
 }
 .retweet-popup-footer-right button i{
@@ -3792,7 +3792,7 @@ border-bottom: 1px solid #e9e9e9;
 }
 .notification-img span.follow-logo{
 	border-radius: 7px;
-	background: #3e9ff2;
+	background: #029046;
 	color: #fff;
 	font-size: 15px;
 	padding: 3px 1px;
@@ -3860,7 +3860,7 @@ border-bottom: 1px solid #e9e9e9;
 
 .notification-tweet a:hover{
 	text-decoration: underline;
-	color: skyblue;
+	color: rgb(101, 230, 212);
 }
 
 .notification-footer{

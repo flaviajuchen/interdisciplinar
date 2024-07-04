@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
  	if(isset($_GET['username']) === true && empty($_GET['username']) === false){
 		include 'core/init.php';
 		$username    = $getFromU->checkInput($_GET['username']);
@@ -25,18 +25,18 @@
 <html>
 
 <head>
-    <title>People following <?php echo $profileData->screenName. ' (@'.$profileData->username.')';?></title>
+    <title>Pessoas seguindo <?php echo $profileData->screenName. ' (@'.$profileData->username.')';?></title>
     <meta charset="UTF-8" />
     
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo BASE_URL; ?>assets/images/bird.svg">
     
-    		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
     <link rel='stylesheet' href='<?php echo BASE_URL; ?>assets/css/font-awesome.css' />
     <link rel='stylesheet' href='<?php echo BASE_URL; ?>assets/css/bootstrap.css' />
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style-complete.css" />
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.css" />
     <script src="<?php echo BASE_URL; ?>assets/js/jquery-3.1.1.min.js"></script>
-    		<script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -138,4 +138,4 @@
     </div>
 </body>
 
-</html>
+</html> -->
